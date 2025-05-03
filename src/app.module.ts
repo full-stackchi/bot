@@ -14,7 +14,7 @@ import { VacancyModule } from "./vacancy/vacancy.module"
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
-        uri: configService.get<string>("MONGODB_URI", "mongodb://localhost:27017/vacancy_bot"),
+        uri: configService.get<string>("MONGODB_URI", "mongodb://mongo:XcbkjYuwlQkjbKRvEfqdIsnucetYrCJo@mongodb.railway.internal:27017/vacancy_bot"),
       }),
     }),
     ScheduleModule.forRoot(),
